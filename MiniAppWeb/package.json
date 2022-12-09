@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.27.0"
+  },
+  "dependencies": {
+    "parcel": "^2.8.0"
   }
 }
