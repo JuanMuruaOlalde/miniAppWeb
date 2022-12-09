@@ -1,0 +1,15 @@
+{
+  "name": "miniappweb",
+  "version": "0.1",
+  "description": "Una pequeña plantilla de muestra para HTML, CSS y JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Juan Murua Olalde",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.27.0"
+  }
+}
