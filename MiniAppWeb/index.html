@@ -18,15 +18,16 @@
     <nav>
         <p>Aquí van enlaces o botones para la navegación, para moverse dentro de esta web.</p>
         <ul>
-            <li><a href="">Página01</a></li>
-            <li><a href="">Página02</a></li>
-            <li><a href="">Página03</a></li>
-            <li><a href="">Página04</a></li>
+            <li><a href="index.html"><button><img src="images/icons8-home-page-64.png" width="32"
+                            heigh="32"></button></a></li>
+            <li><button onclick="PonerElContenidoDeGatos()">Gatos</button></li>
+            <li><button onclick="PonerElContenidoDeJirafas()">Jirafas</button></li>
+            <li><a href="otraPagina.html">Otra página</a></li>
         </ul>
     </nav>
 
     <main>
-        <div>
+        <div id="contenedor_principal">
             <p>Aquí va el contenido principal.</p>
 
             <section>
@@ -44,14 +45,16 @@
     <footer>
         <hr />
         <p>Aquí va el contenido que ha de ir al pie de página. Por ejemplo, esta colección de enlaces de utilidad:</p>
-        <p><a
-                href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure#basic_sections_of_a_document">MDN
-                web docs: Document and website structure</a></p>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model">MDN web docs: The
-                box model</a></p>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout">MDN web docs: CSS layout</a></p>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook">MDN web docs: CSS Layout
-                cookbook</a></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure#basic_sections_of_a_document"
+                target="_blank">MDN web docs: HTML Document and website structure</a></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"
+                target="_blank">MDN web docs: The box model</a></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction" target="_blank">MDN web
+                docs: CSS Layout</a></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook" target="_blank">MDN web docs: CSS
+                Layout cookbook</a></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals" target="_blank">MDN
+                web docs: CSS Text and font styling</a></p>
 
     </footer>
 

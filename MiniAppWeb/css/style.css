@@ -1,3 +1,7 @@
+html {
+    font-family: sans-serif;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -15,6 +19,12 @@ nav li {
     margin: 0 2em 0 0;
 }
 
+nav button {
+    padding: 7px;
+    border: 2px solid grey;
+    border-radius: 2px;
+}
+
 main {
     border: 1px solid;
     padding: 0 20px;
@@ -22,10 +32,20 @@ main {
     grid-template-columns: 70% 30%;
 }
 
+#contenedor_principal {
+    font-family: serif;
+}
+
 aside {
     grid-column: 2;
     border: 1px dotted;
     padding: 0 20px;
+}
+
+aside img {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
 }
 
 footer {
