@@ -1,4 +1,5 @@
 # Ignorar lo que no es codigo fuente propiamente dicho,
 # (lo que se puede recuperar con facilidad desde otras fuentes o compilando el código)
 node_modules/
-
+.parcel-cache/
+dist/
