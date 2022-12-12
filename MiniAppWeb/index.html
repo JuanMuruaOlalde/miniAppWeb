@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+    <meta charset="utf-8">
     <title>Pagina demo</title>
     <meta name="description"
         content="Una muestra básica de las tecnologias base involucradas en la web: HTML, CSS y JavaScript">
@@ -18,10 +19,10 @@
     <nav>
         <p>Aquí van enlaces o botones para la navegación, para moverse dentro de esta web.</p>
         <ul>
-            <li><a href="index.html"><button><img src="images/icons8-home-page-64.png" width="32"
-                            heigh="32"></button></a></li>
-            <li><button onclick="PonerElContenidoDeGatos()">Gatos</button></li>
-            <li><button onclick="PonerElContenidoDeJirafas()">Jirafas</button></li>
+            <li><a href="index.html"><button type="button"><img src="images/icons8-home-page-64.png"
+                            alt="Home icon, icono de casita" width="32" height="32"></button></a></li>
+            <li><button type="button" onclick="PonerElContenidoDeGatos()">Gatos</button></li>
+            <li><button type="button" onclick="PonerElContenidoDeJirafas()">Jirafas</button></li>
             <li><a href="otraPagina.html">Otra página</a></li>
         </ul>
     </nav>
@@ -31,10 +32,19 @@
             <p>Aquí va el contenido principal.</p>
 
             <section>
-                <article>
+                <h2>Título de la sección</h2>
+                <p>Una sección alberga contenido de una misma temática.</p>
+                <p>Este contenido puede estructurarse a su vez en artículos...</p>
 
+                <article>
+                    <h3>Título del artículo</h3>
+                    <p>Un artículo alberga un bloque de contenido que es "autosuficiente", un bloque que podria
+                        llevarse "tal cual" a otra parte.</p>
+                    <p>Aquí iria el contenido de este artículo...</p>
                 </article>
+
             </section>
+
         </div>
 
         <aside>
@@ -43,7 +53,7 @@
     </main>
 
     <footer>
-        <hr />
+        <hr>
         <p>Aquí va el contenido que ha de ir al pie de página. Por ejemplo, esta colección de enlaces de utilidad:</p>
         <p><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure#basic_sections_of_a_document"
                 target="_blank">MDN web docs: HTML Document and website structure</a></p>
@@ -55,6 +65,8 @@
                 Layout cookbook</a></p>
         <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals" target="_blank">MDN
                 web docs: CSS Text and font styling</a></p>
+
+        <p><a href="https://validator.w3.org/#validate_by_upload"><strong>W3C Markup Validation Service</strong></a></p>
 
     </footer>
 
