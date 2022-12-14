@@ -1,3 +1,6 @@
+//Una forma de interactuar con el HTML es a través de clicar "botones" que llaman a funciones en su attributo onclick="-----"
+//Estas son las funciones que son llamadas de esa forma
+
 function PonerElContenidoDeGatos() {
     const contenedorPrincipal = document.querySelector("#contenedor_principal");
     contenedorPrincipal.innerHTML = '<h2>El contenido de gatos</h2>'
@@ -17,3 +20,6 @@ function PonerElContenidoDeJirafas() {
     const contenedorSecundario = document.querySelector("aside");
     contenedorSecundario.innerHTML = '<p><a href="https://commons.wikimedia.org/wiki/File:Giraffa_camelopardalis_angolensis.jpg#/media/Archivo:Giraffa_camelopardalis_angolensis.jpg"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Giraffa_camelopardalis_angolensis.jpg/1200px-Giraffa_camelopardalis_angolensis.jpg" alt="Giraffa camelopardalis angolensis.jpg"></a><br>De © Hans Hillewaert, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=2429667">Enlace</a></p>'
 }
+
+
+//Otra forma de interactuar con el HTML es a través de responder a eventos

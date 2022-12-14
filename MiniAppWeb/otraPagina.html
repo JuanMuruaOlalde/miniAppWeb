@@ -24,9 +24,53 @@
     </nav>
 
     <main>
-        <p>Una página que está vacia...</p>
+        <div id="contenedor_principal">
+        <p>En esta página jugaremos un rato con formularios</p>
+
+        <section>
+            <h2>Interacción entre formulario y código JavaScript local</h2>
+            <p>Estas son dos mini-aplicaciones web mono-página.</p>
+
+            <h3>Jugando con paralelepipedos:</h3>
+            <form id="formularioDeParalelepipedos" class="enmarcado_dentro_de_una_caja">
+                <label for="unLado">Un lado: <input type="text" id="unLado" name="unLado" /></label>
+                <br>
+                <label for="otroLado">Un lado: <input type="text" id="otroLado" name="otroLado" /></label>
+                <br>
+                <input type="submit" id="btnParalelepipedo" value="Calcular perímetro y área">
+                <br>
+                <textarea id="respuestaParalelepipedo" class="contenedor_de_una_respuesta" readonly></textarea>
+            </form>
+
+            <h3>Jugando con circunferencias:</h3>
+            <form id="formularioDeCircunferencias" class="enmarcado_dentro_de_una_caja">
+
+            </form>
+            <!--PENDIENTE preparar este formulario reaccionando al botón con eventos en lugar de con el atributo onclick-->
+
+        </section>
+
+        <section>
+            <h2>Interacción con APIs externas</h2>
+            <p>Este es un frontend para utilizar un servicio de ?</p>
+            <!--PENDIENTE preparar esto usando un servicio tal como https://openweathermap.org/api/one-call-3  o algo similar-->
+        </section>
+
+        </div>
     </main>
 
+    <footer>
+        <hr>
+        <p>Algunos enlaces de utilidad:</p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms" target="_blank">MDN web docs: HTML Forms</a></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation" target="_blank">MDN web docs: form data Validation</a></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data" target="_blank">MDN web docs: Sending form data (HTML)</a></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_forms_through_JavaScript" target="_blank">MDN web docs: Sending form data (JavaScript)</a></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank">MDN web docs: Fetch API</a></p>
+
+    </footer>
+
+    <script src="js/otroCode.js"></script>
 </body>
 
 </html>
