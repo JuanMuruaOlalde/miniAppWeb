@@ -1,2 +1,3 @@
-# GitWorkspace
- Un espacio donde ir trabajando codigo hasta que algo tenga entidad como para tener su propio espacio aparte.
+# Programacion Web: HTML-CSS-JavaScript
+Son simplemente algunas muestras de código...
+...que dejo aquí por si alguien pudieran serle de alguna utilidad.
