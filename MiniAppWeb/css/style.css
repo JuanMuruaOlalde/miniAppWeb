@@ -46,12 +46,23 @@ h3 {
     margin-top: 2em;
 }
 
+form {
+    display: inline-block;
+}
+
 .enmarcado_dentro_de_una_caja {
     padding: 1em;
-    background-color: lightgray;
+    background-color: whitesmoke;
     border: 1px solid grey;
     border-radius: 2px;
     box-shadow: 2px 2px green;
+}
+
+input[type="submit"],
+button[type="submit"] {
+    margin: 1em;
+    padding: 0.5em;
+    background-color: oldlace;
 }
 
 .contenedor_de_una_respuesta {
