@@ -117,7 +117,52 @@
 
                 <section>
                     <h2>Interacción con APIs externas</h2>
-                    <p>_PENDIENTE_ de hacer...</p>
+                    <p>Este es un frontend para utilizar un par de servicios:</p>
+                    <ul>
+                        <li>
+                            <a href="https://openweathermap.org/api/geocoding-api" target="_blank"
+                                >https://openweathermap.org/api/geocoding-api</a
+                            >
+                        </li>
+                        <li>
+                            <a href="https://openweathermap.org/current" target="_blank">https://openweathermap.org/current</a>
+                        </li>
+                    </ul>
+                    <div id="formularioDeGeolocalizacionYMetereologia" class="enmarcado_dentro_de_una_caja">
+                        <p>
+                            <label for="poblacion:"
+                                >Población: <input type="text" id="poblacion" name="poblacion" required
+                            /></label>
+                        </p>
+                        <p>
+                            <label for="codigoPais"
+                                >Código de pais:
+                                <input
+                                    type="text"
+                                    pattern="[a-zA-Z][a-zA-Z]"
+                                    value="ES"
+                                    id="codigoPais"
+                                    name="codigoPais"
+                                    size="2"
+                                    required
+                                />(2 letras)</label
+                            >
+                            <br /><a
+                                href="https://es.wikipedia.org/wiki/ISO_3166-1#C%C3%B3digos_oficialmente_asignados"
+                                target="_blank"
+                                >(consultar los códigos oficiales)</a
+                            >
+                        </p>
+                        <p>
+                            <input
+                                type="button"
+                                id="btnGeolocalizacionYMetereologia"
+                                onclick="ObtenerCoordenadasYMetereologia()"
+                                value="Obtener coordenadas y metereologia"
+                            />
+                        </p>
+                    </div>
+                    <div id="contenedorRespuestaAPI"></div>
                 </section>
             </div>
         </main>
@@ -135,16 +180,21 @@
             </p>
             <p>
                 <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data" target="_blank"
-                    >MDN web docs: Sending form data (HTML)</a
+                    >MDN web docs: sending form data (HTML)</a
                 >
             </p>
             <p>
                 <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_forms_through_JavaScript" target="_blank"
-                    >MDN web docs: Sending form data (JavaScript)</a
+                    >MDN web docs: sending form data (JavaScript)</a
                 >
             </p>
             <p>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank">MDN web docs: Fetch API</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank">MDN web docs: fetch API</a>
+            </p>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank"
+                    >MDN web docs: using fetch API</a
+                >
             </p>
             <p>
                 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank"
@@ -153,6 +203,6 @@
             </p>
         </footer>
 
-        <script type="module" src="js/otroCode.js"></script>
+        <script src="js/otroCode.js"></script>
     </body>
 </html>

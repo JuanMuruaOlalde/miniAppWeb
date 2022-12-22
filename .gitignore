@@ -1,5 +1,10 @@
-# Ignorar lo que no es codigo fuente propiamente dicho,
-# (lo que se puede recuperar con facilidad desde otras fuentes o compilando el código)
+# Todo lo que contenga secretos, 
+# nunca puede llegar al repositorio.
+configuracion.json
+
+# Todo lo que no es codigo fuente propiamente dicho
+# (lo que se puede recuperar con facilidad desde otras fuentes o compilando el código),
+# es inutil que esté ocupando sitio en el repositorio.
 node_modules/
 .parcel-cache/
 dist/
