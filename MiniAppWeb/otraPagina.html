@@ -1,88 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Otra pagina demo</title>
+        <meta
+            name="description"
+            content="Una pagina para contenido extra, simplemente para tener algo a lo que saltar desde la página índice."
+        />
+        <meta name="author" content="Juan Murua Olalde" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <title>Otra pagina demo</title>
-    <meta name="description"
-        content="Una pagina vacia, simplemente para tener algo a lo que saltar desde la página índice.">
-    <meta name="author" content="Juan Murua Olalde">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <body>
+        <header>
+            <h1>Esta es otra página</h1>
+        </header>
 
-<body>
-    <header>
-        <h1>Esta es otra página</h1>
-    </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"
+                        ><button type="button" href="index.html">
+                            <img
+                                src="images/icons8-home-page-64.png"
+                                alt="Home icon, icono de casita"
+                                width="32"
+                                height="32"
+                            /></button
+                    ></a>
+                </li>
+            </ul>
+        </nav>
 
-    <nav>
-        <ul>
-            <li><a href="index.html"><button type="button" href="index.html"><img src="images/icons8-home-page-64.png" alt="Home icon, icono de casita" width="32" height="32"></button></a></li>
-        </ul>
-    </nav>
+        <main>
+            <div id="contenedor_principal">
+                <p>En esta página jugaremos un rato con formularios</p>
 
-    <main>
-        <div id="contenedor_principal">
-        <p>En esta página jugaremos un rato con formularios</p>
+                <section>
+                    <h2>Interacción entre formulario y código JavaScript local</h2>
+                    <p>Estas son dos mini-aplicaciones web mono-página.</p>
 
-        <section>
-            <h2>Interacción entre formulario y código JavaScript local</h2>
-            <p>Estas son dos mini-aplicaciones web mono-página.</p>
+                    <h3>Paralelepipedos:</h3>
+                    <form id="formularioDeParalelepipedos" class="enmarcado_dentro_de_una_caja">
+                        <p>
+                            <label for="unLado"
+                                >Un lado:
+                                <input type="text" pattern="[0-9]+\.?[0-9]?" id="unLado" name="unLado" size="8" required />
+                                (separador decimal punto .)</label
+                            >
+                        </p>
+                        <p>
+                            <label for="otroLado"
+                                >Otro lado:
+                                <input type="text" pattern="[0-9]+\.?[0-9]?" id="otroLado" name="otroLado" size="8" required
+                            /></label>
+                        </p>
+                        <p>
+                            <input type="submit" id="btnParalelepipedo" value="Calcular perímetro y área" />
+                        </p>
+                        <p>
+                            <textarea id="respuestaParalelepipedo" class="contenedor_de_una_respuesta" readonly></textarea>
+                        </p>
+                    </form>
 
-            <h3>Paralelepipedos:</h3>
-            <form id="formularioDeParalelepipedos" class="enmarcado_dentro_de_una_caja">
-                <p><label for="unLado">Un lado: <input type="text" pattern="[0-9]+\.?[0-9]?" id="unLado" name="unLado" size="8" required /> (separador decimal punto .)</label></p>
-                <p><label for="otroLado">Otro lado: <input type="text" pattern="[0-9]+\.?[0-9]?" id="otroLado" name="otroLado" size="8" required/></label></p>
-                <p><input type="submit" id="btnParalelepipedo" value="Calcular perímetro y área"></p>
-                <p><textarea id="respuestaParalelepipedo" class="contenedor_de_una_respuesta" readonly></textarea></p>
-            </form>
+                    <h3>Pizzas:</h3>
+                    <form id="formularioDePizzas" class="enmarcado_dentro_de_una_caja">
+                        <fieldset>
+                            <legend>Elegir base:</legend>
+                            <p>
+                                <label for="pastaFina"
+                                    ><input type="radio" name="base" id="pastaFina" value="pastaFina" />Pasta fina</label
+                                >
+                            </p>
+                            <p>
+                                <label for="pastaNormal"
+                                    ><input type="radio" name="base" id="pastaNormal" value="pastaNormal" checked />Pasta
+                                    normal</label
+                                >
+                            </p>
+                            <p>
+                                <label for="conBordeQueso"
+                                    ><input type="radio" name="base" id="conBordeQueso" value="conBordeQueso" />Con borde
+                                    relleno de queso</label
+                                >
+                            </p>
+                        </fieldset>
+                        <br />
+                        <fieldset>
+                            <legend>Ingredientes:</legend>
+                            <p>Todas llevan una capa base de tomate y queso. Además puedes añadir:</p>
+                            <p>
+                                <label for="jamonYork"
+                                    ><input type="checkbox" id="jamonYork" name="jamonYork" />Jamón York</label
+                                >
+                            </p>
+                            <p>
+                                <label for="bacon"><input type="checkbox" id="bacon" name="bacon" />Bacon crujiente</label>
+                            </p>
+                            <p>
+                                <label for="peperoni"><input type="checkbox" id="peperoni" name="peperoni" />Peperoni</label>
+                            </p>
+                            <p>
+                                <label for="champiñon"
+                                    ><input type="checkbox" id="champiñon" name="champiñon" />Champiñones</label
+                                >
+                            </p>
+                            <p>
+                                <label for="aceituna"><input type="checkbox" id="aceituna" name="aceituna" />Aceitunas</label>
+                            </p>
+                        </fieldset>
+                        <br />
+                        <button type="submit" id="procesarPizza">Procesar Pizza</button>
+                    </form>
+                </section>
 
-            <h3>Pizzas:</h3>
-            <form id="formularioDePizzas" class="enmarcado_dentro_de_una_caja">
-                <fieldset>
-                    <legend>Elegir base:</legend>
-                    <p><label for="pastaFina"><input type="radio" name="base" id="pastaFina" value="pastaFina">Pasta fina</label></p>
-                    <p><label for="pastaNormal"><input type="radio" name="base" id="pastaNormal" value="pastaNormal" checked>Pasta normal</label></p>
-                    <p><label for="conBordeQueso"><input type="radio" name="base" id="conBordeQueso" value="conBordeQueso">Con borde relleno de queso</label></p>
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend>Ingredientes:</legend>
-                    <p>Todas llevan una capa base de tomate y queso. Además puedes añadir:</p>
-                    <p><label for="jamonYork"><input type="checkbox" id="jamonYork" name="jamonYork">Jamón York</label></p>
-                    <p><label for="bacon"><input type="checkbox" id="bacon" name="bacon">Bacon crujiente</label></p>
-                    <p><label for="peperoni"><input type="checkbox" id="peperoni" name="peperoni">Peperoni</label></p>
-                    <p><label for="champiñon"><input type="checkbox" id="champiñon" name="champiñon">Champiñones</label></p>
-                    <p><label for="aceituna"><input type="checkbox" id="aceituna" name="aceituna">Aceitunas</label></p>
-                </fieldset>
-                <br>
-                <button type="submit" id="procesarPizza">Procesar Pizza</button>
-            </form>
+                <section>
+                    <h2>Interacción con APIs externas</h2>
+                    <p>_PENDIENTE_ de hacer...</p>
+                </section>
+            </div>
+        </main>
 
-        </section>
+        <footer>
+            <hr />
+            <p>Algunos enlaces de utilidad:</p>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms" target="_blank">MDN web docs: HTML Forms</a>
+            </p>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation" target="_blank"
+                    >MDN web docs: form data Validation</a
+                >
+            </p>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data" target="_blank"
+                    >MDN web docs: Sending form data (HTML)</a
+                >
+            </p>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_forms_through_JavaScript" target="_blank"
+                    >MDN web docs: Sending form data (JavaScript)</a
+                >
+            </p>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank">MDN web docs: Fetch API</a>
+            </p>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank"
+                    >MDN web docs: Regular Expressions (regex)</a
+                >
+            </p>
+        </footer>
 
-        <section>
-            <h2>Interacción con APIs externas</h2>
-            <p>Este es un frontend para utilizar un servicio de ?</p>
-            <!--PENDIENTE preparar esto usando un servicio tal como https://openweathermap.org/api/one-call-3  o algo similar-->
-        </section>
-
-        </div>
-    </main>
-
-    <footer>
-        <hr>
-        <p>Algunos enlaces de utilidad:</p>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms" target="_blank">MDN web docs: HTML Forms</a></p>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation" target="_blank">MDN web docs: form data Validation</a></p>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data" target="_blank">MDN web docs: Sending form data (HTML)</a></p>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_forms_through_JavaScript" target="_blank">MDN web docs: Sending form data (JavaScript)</a></p>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" target="_blank">MDN web docs: Fetch API</a></p>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions" target="_blank">MDN web docs: Regular Expressions (regex)</a></p>
-    </footer>
-
-    <script src="js/otroCode.js"></script>
-</body>
-
+        <script type="module" src="js/otroCode.js"></script>
+    </body>
 </html>

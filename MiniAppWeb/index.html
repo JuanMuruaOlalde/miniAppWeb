@@ -1,82 +1,119 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Pagina demo</title>
+        <!--Este título es para la pestaña del navegador-->
+        <meta
+            name="description"
+            content="Una muestra básica de las tecnologias base involucradas en la web: HTML, CSS y JavaScript"
+        />
+        <meta name="author" content="Juan Murua Olalde" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <title>Pagina demo</title>
-    <!--Este título es para la pestaña del navegador-->
-    <meta name="description"
-        content="Una muestra básica de las tecnologias base involucradas en la web: HTML, CSS y JavaScript">
-    <meta name="author" content="Juan Murua Olalde">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <body>
+        <header>
+            <h1>Este es el título de la cabecera de la página</h1>
+            <!--Es importante que solo haya un título principal <h1> en la página-->
+        </header>
 
-<body>
-    <header>
-        <h1>Este es el título de la cabecera de la página</h1>
-        <!--Es importante que solo haya un título principal <h1> en la página-->
-    </header>
+        <nav>
+            <p>Aquí van enlaces o botones para la navegación, para moverse dentro de esta web.</p>
+            <ul>
+                <li>
+                    <a href="index.html"
+                        ><button type="button">
+                            <img
+                                src="images/icons8-home-page-64.png"
+                                alt="Home icon, icono de casita"
+                                width="32"
+                                height="32"
+                            /></button
+                    ></a>
+                </li>
+                <li>
+                    <button type="button" onclick="PonerElContenidoDeGatos()">Gatos</button>
+                </li>
+                <li>
+                    <button type="button" onclick="PonerElContenidoDeJirafas()">Jirafas</button>
+                </li>
+                <li><a href="otraPagina.html">Otra página</a></li>
+            </ul>
+        </nav>
 
-    <nav>
-        <p>Aquí van enlaces o botones para la navegación, para moverse dentro de esta web.</p>
-        <ul>
-            <li><a href="index.html"><button type="button"><img src="images/icons8-home-page-64.png"
-                            alt="Home icon, icono de casita" width="32" height="32"></button></a></li>
-            <li><button type="button" onclick="PonerElContenidoDeGatos()">Gatos</button></li>
-            <li><button type="button" onclick="PonerElContenidoDeJirafas()">Jirafas</button></li>
-            <li><a href="otraPagina.html">Otra página</a></li>
-        </ul>
-    </nav>
+        <main>
+            <div id="contenedor_principal">
+                <p>Aquí va el contenido principal.</p>
+                <p>
+                    Ese contenido puede ser <strong>contenido estático</strong>, escrito tal cual, como el escrito justo a
+                    continuación...
+                </p>
+                <p>
+                    O puede ser <strong>contenido dinámico</strong>, como el que aparece si se clican los botones sobre gatos,
+                    jirafas,... en la barra de navegación
+                </p>
 
-    <main>
-        <div id="contenedor_principal">
-            <p>Aquí va el contenido principal.</p>
-            <p>Ese contenido puede ser <strong>contenido estático</strong>, escrito tal cual, como el escrito justo a continuación...</p>
-            <p>O puede ser <strong>contenido dinámico</strong>, como el que aparece si se clican los botones sobre gatos, jirafas,... en la barra de navegación</p>
+                <section>
+                    <h2>Título de la sección</h2>
+                    <!--Es importante mantener la coherencia, todos los titulos de sección o similar serán <h2>-->
+                    <p>Una sección alberga contenido de una misma temática.</p>
+                    <p>Este contenido puede estructurarse a su vez en artículos...</p>
 
-            <section>
-                <h2>Título de la sección</h2>
-                <!--Es importante mantener la coherencia, todos los titulos de sección o similar serán <h2>-->
-                <p>Una sección alberga contenido de una misma temática.</p>
-                <p>Este contenido puede estructurarse a su vez en artículos...</p>
+                    <article>
+                        <h3>Título del artículo</h3>
+                        <!--Es importante mantener la coherencia, todos los titulos de artículo o similar serán <h3>-->
+                        <p>
+                            Un artículo alberga un bloque de contenido que es "autosuficiente"; un bloque que podria llevarse
+                            "tal cual" a otra parte; un bloque que "tiene sentido en sí mismo".
+                        </p>
+                        <p>Aquí iria el contenido de este artículo...</p>
+                    </article>
+                </section>
+            </div>
 
-                <article>
-                    <h3>Título del artículo</h3>
-                    <!--Es importante mantener la coherencia, todos los titulos de artículo o similar serán <h3>-->
-                    <p>Un artículo alberga un bloque de contenido que es "autosuficiente"; un bloque que podria
-                        llevarse "tal cual" a otra parte; un bloque que "tiene sentido en sí mismo".</p>
-                    <p>Aquí iria el contenido de este artículo...</p>
-                </article>
+            <aside>
+                <p>Aquí va contenido secundario o contenido explicativo del contenido principal</p>
+            </aside>
+        </main>
 
-            </section>
+        <footer>
+            <hr />
+            <p>Aquí va el contenido que ha de ir al pie de página. Por ejemplo, esta colección de enlaces de utilidad:</p>
+            <p>
+                <a
+                    href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure#basic_sections_of_a_document"
+                    target="_blank"
+                    >MDN web docs: HTML Document and website structure</a
+                >
+            </p>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model" target="_blank"
+                    >MDN web docs: The box model</a
+                >
+            </p>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction" target="_blank"
+                    >MDN web docs: CSS Layout</a
+                >
+            </p>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook" target="_blank"
+                    >MDN web docs: CSS Layout cookbook</a
+                >
+            </p>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals" target="_blank"
+                    >MDN web docs: CSS Text and font styling</a
+                >
+            </p>
 
-        </div>
+            <p>
+                <a href="https://validator.w3.org/#validate_by_upload"><strong>W3C Markup Validation Service</strong></a>
+            </p>
+        </footer>
 
-        <aside>
-            <p>Aquí va contenido secundario o contenido explicativo del contenido principal</p>
-        </aside>
-    </main>
-
-    <footer>
-        <hr>
-        <p>Aquí va el contenido que ha de ir al pie de página. Por ejemplo, esta colección de enlaces de utilidad:</p>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure#basic_sections_of_a_document"
-                target="_blank">MDN web docs: HTML Document and website structure</a></p>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model"
-                target="_blank">MDN web docs: The box model</a></p>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Introduction" target="_blank">MDN web
-                docs: CSS Layout</a></p>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook" target="_blank">MDN web docs: CSS
-                Layout cookbook</a></p>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals" target="_blank">MDN
-                web docs: CSS Text and font styling</a></p>
-
-        <p><a href="https://validator.w3.org/#validate_by_upload"><strong>W3C Markup Validation Service</strong></a></p>
-
-    </footer>
-
-    <script src="js/code.js"></script>
-</body>
-
+        <script src="js/code.js"></script>
+    </body>
 </html>
