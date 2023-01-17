@@ -1,7 +1,3 @@
-
-Es simplemente una muestra de código...\
-...que dejo aquí por si a alguien pudiera serle de alguna utilidad.
-
 # MiniAppWeb
 
 Es una página sencilla (index.html y code.js), de contenido estático.
