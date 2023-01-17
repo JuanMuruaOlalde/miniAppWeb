@@ -1,9 +1,8 @@
-# Programacion Web: HTML-CSS-JavaScript
 
-Son simplemente algunas muestras de código...\
-...que dejo aquí por si a alguien pudieran serle de alguna utilidad.
+Es simplemente una muestra de código...\
+...que dejo aquí por si a alguien pudiera serle de alguna utilidad.
 
-## MiniAppWeb
+# MiniAppWeb
 
 Es una página sencilla (index.html y code.js), de contenido estático.
 
