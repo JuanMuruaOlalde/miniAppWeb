@@ -1,5 +1,5 @@
 # MiniAppWeb
 
-Es una página sencilla (index.html y code.js), de contenido estático.
+Una página sencilla de contenido estático (index.html y code.js).
 
-Junto con una aplicación sencilla (SPA, Single Page App), basada en cálculo/procesamiento totalmente en la parte cliente (otraPagina.html y otroCode.js); con algo de apoyo en servicios de terceros (https://openweathermap.org/api).
+Y una SPA (Single Page App) sencilla de cálculo/procesamiento totalmente en la parte cliente (otraPagina.html y otroCode.js); utilizando un servicio de terceros (https://openweathermap.org/api).
